@@ -14,19 +14,41 @@ public class Array5 {
         배열들 중 동인 인덱스에 위치한 값들 중 최소값들만 뽑아서 새로운 배열을 만든다.
          */
 
-        int a = 10;
-        int b = 5;
-        int c = 7;
-        int min = a;
-        if(a < b){
-            min = a;
-        }else{
-            min = b;
-        }
+        for (int i = 0; i < num1.length; i++) {
+            int min = num1[i];
+            if(min > num2[i]) {
+                min = num2[i];
+                if (min > num3[i]) {
+                    min = num3[i];
+                    if (min > num4[i]) {
+                        min = num4[i];
+                    }
 
-        if(c < min){
-            min = c;
+                } else if (min > num4[i]) {
+                    min = num4[i];
+                }
+
+            }else if(min > num3[i]){
+                min = num3[i];
+                if(min > num4[i]){
+                    min = num4[i];
+                }
+
+            } else if (min > num4[i]){
+                min = num4[i];
+            }
+            resultArray[i] = min;
+
         }
-        System.out.println("min: " + min);
+        for(int i = 0; i < resultArray.length; i++){
+            System.out.println(resultArray[i]);
+        }
+        int min = resultArray[0];
+        for(int i = 0; i < resultArray.length; i++){
+            if(min > resultArray[i]){
+                min = resultArray[i];
+            }
+        }
+        System.out.println("최소값: " + min);
     }
 }
