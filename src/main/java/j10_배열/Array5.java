@@ -40,9 +40,6 @@ public class Array5 {
             resultArray[i] = min;
 
         }
-        for(int i = 0; i < resultArray.length; i++){
-            System.out.println(resultArray[i]);
-        }
         int min = resultArray[0];
         for(int i = 0; i < resultArray.length; i++){
             if(min > resultArray[i]){

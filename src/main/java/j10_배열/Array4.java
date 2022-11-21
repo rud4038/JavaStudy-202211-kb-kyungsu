@@ -5,6 +5,7 @@ public class Array4 {
     public static int cmMin(int[] array1, int[] array2){
         int min = array2[0];
         for(int i = 0; i < array1.length; i++){
+            int count = 0;
             for(int j = 0; j < array2.length; j++){
                 if(array1[i] == array2[j]){
                     if(array1[i] < min){
