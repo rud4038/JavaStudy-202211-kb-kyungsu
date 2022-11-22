@@ -9,15 +9,19 @@ public class AnimalMain {
 
         Animal hAnimal = human; // 업캐스팅
         Animal tAnimal = tiger;
-        Animal[] animals = new Animal[3];
+        Animal[] animals = new Animal[5];
 
         animals[0] = new Human();
         animals[1] = new Tiger();
-        animals[2] = new Animal();
+        animals[2] = new Human();
+        animals[3] = new Tiger();
+        animals[4] = new Human();
 
+        System.out.println("[업캐스팅]");
         for(int i = 0; i < animals.length; i++){
             animals[i].move();
         }
+        System.out.println("[다운캐스팅]");
         for(int i = 0; i < animals.length; i++) { //다운캐스팅
             if(animals[i] instanceof Human) {
                 Human h = (Human) animals[i];
