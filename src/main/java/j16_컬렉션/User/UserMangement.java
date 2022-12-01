@@ -15,15 +15,18 @@ public class UserMangement {
 		Map<String, Object> user1 = new HashMap<>();
 		user1.put("username", "a1");
 		user1.put("password", "1111");
+		
 		Map<String, Object> user2 = new HashMap<>();
-		user1.put("username", "b1");
-		user1.put("password", "2222");
+		user2.put("username", "b1");
+		user2.put("password", "2222");
+		
 		Map<String, Object> user3 = new HashMap<>();
-		user1.put("username", "c1");
-		user1.put("password", "3333");
+		user3.put("username", "c1");
+		user3.put("password", "3333");
+		
 		Map<String, Object> user4 = new HashMap<>();
-		user1.put("username", "d1");
-		user1.put("password", "4444");
+		user4.put("username", "d1");
+		user4.put("password", "4444");
 
 		
 		userRepository.register(user1);
