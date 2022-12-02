@@ -16,6 +16,7 @@ public class CustomExceptionMain {
 		System.out.print("비밀번호: ");
 		password = scanner.nextLine();
 		
+		
 		try {
 			if (username.isBlank() && password.isBlank()) {
 				Map<String, String> errorMap = new HashMap<>();

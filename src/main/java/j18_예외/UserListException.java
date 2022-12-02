@@ -26,6 +26,8 @@ public class UserListException {
 		
 		int length = userList.size();
 		
+
+		
 		try {
 			for(int i = 0; i < length; i++) {
 				System.out.println(userList.get(i));
